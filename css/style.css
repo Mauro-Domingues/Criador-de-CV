@@ -150,12 +150,12 @@ main{
     flex-direction: column;
 }
 
-/* Barra de Orientação das Sections */
+/* Barra de Orientação das Seções */
 
 main .main-header{
     display: flex;
     justify-content: space-around;
-    border-bottom: 0.7px solid #1111;
+    border-bottom: 0.7px solid #111;
     padding: 5px;
 }
 
@@ -324,7 +324,6 @@ input.options{
     background-size: 40px;
 }
 
-
 /* Seção de Conclusão */
 
 article.colors{
@@ -365,3 +364,172 @@ label{
 }
 
 /* Seção do CV */
+
+.curriculum{
+    width: 620px;
+    height: 877px;
+    background-color: #fff;
+    position: absolute;
+    top:50%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    border-radius: 2px;
+}
+
+.curriculum * {
+    display: flex;
+    word-break: break-word;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Faixa do CV */
+
+.belt{
+    width: 30%;
+    height: 100%;
+    background-color: #434445;
+    color: #fff;
+}
+
+.belt * {
+    width: 90%;
+}
+
+.picture{
+    height: 20%;
+}
+
+.get-picture{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+}
+
+.about{
+    height: 50%;
+    padding-top: 15px;
+    justify-content: flex-start;
+}
+
+.about h4{
+    margin-bottom: 10px;
+}
+
+.social-medias{
+    height: 30%;
+    padding-bottom: 10px;
+    justify-content: flex-end;
+}
+
+/* Corpo do CV */
+
+.body{
+    width: 70%;
+    height: 100%;
+    background-color: #fff;
+    color: #000;
+}
+
+.body > *{
+    flex-direction: row;
+    width: 99%;
+}
+
+/* Ícones e descrição */
+
+.extra-data{
+    flex-direction: row;
+    margin-top: 7px;
+    width: 90%;
+    justify-content: flex-start;
+}
+
+.container{
+    width: 100%;
+    flex-direction: row;
+    padding-bottom: 5px;
+}
+
+.icon{
+    position: relative;
+    left: 0;
+    top: -4px;
+    width: 20px;
+    margin-right: 5px;
+    align-self: flex-start;
+}
+
+hr{
+    margin-bottom: 10px;
+}
+
+/* Dados */
+
+.main-info{
+    height: 20%;
+}
+
+.name{
+    width: 40%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.name .first-name, .name .surname, .name .title, .name .age{
+    margin-left: 10px;
+}
+
+.title {
+    margin-top: 5px;
+}
+
+.name .first-name, .name .age{
+    margin-top: 15px;
+}
+
+.adress{
+    width: 60%;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+/* Experiência */
+
+.xp-info{
+    height: 35%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.company-name, .grad-name{
+    width: 35%;
+    height: 100%;
+    border-right: 1px double #ddd;
+}
+
+.company-xp, .grad-description{
+    width: 65%;
+    height: 100%;
+}
+
+/* Formação */
+
+.grad-info{
+    height: 25%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Conhecimentos */
+
+.skill-info{
+    height: 20%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
