@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;200&family=Anek+Malayalam:wght@100;200&family=Roboto+Condensed:wght@300&family=Roboto+Mono:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+body{
+    background-color: #ccc;
+    font-family: 'Anek Latin', sans-serif;
+    text-align: center;
+}
+
+.orange{
+    color: #F37112;
+}
+
+.blue{
+    color: #0099DA;
+}
+
+/* Página Inicial de Apresentação */
+
+.presentation-container{
+    display: flex;
+}
+
+.presentation{
+    background-color: #fff;
+    width: 700px;   
+    height:100vh;
+    margin: 0;
+    box-shadow: 1px 1px 1px 1px #0000002d;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    padding: 20px;
+    padding-left: 40px;
+    margin-left: 20px;
+    font-size: 2rem;
+    text-align: left;
+    color: #3596d5;
+    background-image: url('../images/curriculum-icon.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 40px;
+}
+
+.presentation .title{
+    font-size: 2.9rem;
+    margin-bottom: 20px;
+}
+
+.presentation .subtitle{
+    margin: 30px 0 45px 0;
+    font-size: 1.2rem;
+}
+
+.presentation-info{
+    margin: 20px;
+    width: 650px;
+    margin: 80px 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.presentation-info figure{
+    width: 20%;
+}
+
+figure figcaption{
+    margin-bottom: 20px;
+}
+
+.presentation-example{
+    margin: 70px;
+}
+
+.presentation-example *:hover{
+    padding: 5px;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+/* Botões */
+
+button{
+    align-self: center;
+    width: 240px;
+    height: 65px;
+    margin-top: 40px;
+    font-size: 1.01rem;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #fff;
+    background-repeat: no-repeat;
+    background-size: 35px;
+}
+
+button:hover{
+    transform: scale(1.01);
+}
+
+button:active{
+    transform: scale(0.99);
+    border: none;
+    box-shadow: none;
+}
+
+.advance{
+    text-align: left;
+    padding-left: 40px;
+    background-position: right 12px center;
+    background-image: url('../images/right-arrow-icon.png');
+    background-color: #1688FE;
+    box-shadow: 0 0 3px #1688FE;
+}
+
+.back{
+    text-align: right;
+    padding-right: 40px;
+    background-position: left 12px center;
+    background-image: url('../images/left-arrow-icon.png');
+    background-color: #F37112;
+    box-shadow: 0 0 3px #F37112;
+}
+
+.pdf {
+    text-align: center;
+    background-color: #198b19;
+    box-shadow: 0 0 3px #198b19;
+}
+
+/* Main */
+
+main{
+    position: initial;
+    width: 700px;
+    height: 100vh;
+    background-color: #F7F7FC;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Barra de Orientação das Sections */
+
+main .main-header{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 0.7px solid #1111;
+    padding: 5px;
+}
+
+.main-header article{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    color: #000;
+}
+
+.main-header article span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.verified-text{
+    color: #0099DA;
+    cursor: pointer;
+}
+
+.non-verified-text{
+    color: #b4b4b4;
+}
+
+.verified{
+    background-color: #0099DA;
+}
+
+.non-verified{
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+/* Adicionar e Remover Itens */
+
+div.add-remove{
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+#add-button, #remove-button {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    width: 25px;
+    height: 25px;
+    z-index: 2;
+}
+
+.pointer {
+    position: absolute;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    z-index: 1;
+}
+
+div.add-remove:hover{
+    transform: scale(1.1);
+}
+
+div.add-remove:active{
+    transform: scale(0.9);
+}
+
+.add {
+    color: #0f0;
+}
+
+.remove {
+    color: #f00;
+}
+
+/* Seções */
+
+main section{
+    display: flex;
+    flex-direction: column;
+}
+
+main section h1 {
+    font-size: 2.5rem;
+    margin: 50px auto 25px auto;
+}
+
+main section h4 {
+    color: #7171AC;
+    font-size: 1.3rem;
+    margin: 25px;
+}
+
+.input-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+input.global, .selection{
+    width: 220px;
+    height: 55px;
+    border: 0.7px solid #7171AC;
+    color: #666;
+    outline: none;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
+input.global:focus, .selection:focus{
+    border: 1.6px solid #1688FE;
+}
+
+input.double{
+    width: 470px;
+}
+
+input.high{
+    height: 110px;
+}
+
+input.options{
+    width: 400px;
+}
+
+/* Seção de Experiência */
+
+.error-box{
+    width: 450px;
+    height: 400px;
+    background-color: #fff;
+    box-shadow: 0 0 5px #1688FE;
+    color: #7171AC;
+    position: absolute;
+    top:20%;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    border-radius: 5px;
+    padding-bottom: 25px;
+    display: none;
+}
+
+.error-box h1{
+    background-color: #1688FE;
+    align-self: flex-start;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 150px;
+    border-radius: 5px;
+    margin: 0;
+    margin-bottom: 20px;
+    background-image: url('../images/exclamation-icon.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-position-x: 15px;
+    background-size: 40px;
+}
+
+
+/* Seção de Conclusão */
+
+article.colors{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+    width: 100%;
+}
+
+input.none{
+    opacity: 0;
+    z-index: 2;
+    width: 220px;
+    cursor: pointer;
+}
+
+input.none::-webkit-file-upload-button{
+    cursor: pointer;
+}
+
+span.fake-input{
+    cursor: pointer;
+    color: #fff;
+    z-index: 1;
+    background: url('../images/select-file.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 300px;
+}
+
+span.fake-input:hover{
+    border: 1px solid #1688FE;
+}
+
+label{
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+
+/* Seção do CV */
