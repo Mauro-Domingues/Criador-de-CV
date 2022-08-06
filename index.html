@@ -15,7 +15,7 @@
 
         <!--Header da página inicial-->
 
-        <!--<section class="presentation-container">
+        <section class="presentation-container">
             <header>
                 <div class="presentation">
                     <h2 class="logo">Criar CV</h2>
@@ -41,9 +41,9 @@
                 </div>
             </header>
             <figure class="presentation-example">
-                <img src="./images/curriculum-example.png" width="500px">
+                <img src="./images/curriculum-example.png" width="500px" style="display: none;"> <!--Retirar o display none-->
             </figure>
-        </section>-->
+        </section>
 
         <main>
 
@@ -86,15 +86,20 @@
                 <div class="input-content">
                     <input class="global" type="text" placeholder="Nome">
                     <input class="global" type="text" placeholder="Sobrenome">
-                    <input class="global double" type="text" placeholder="Endereço">
-                    <input class="global" type="text" placeholder="Cidade">
-                    <input class="global" type="number" placeholder="Cep">
+                    <input class="global" type="number" placeholder="Idade">
+                    <input class="global" type="text" placeholder="Título do perfil">
                     <input class="global" type="number" placeholder="Telefone">
                     <input class="global" type="email" placeholder="E-mail">
+                    <input class="global double" type="text" placeholder="Endereço (rua, número, bairro)">
+                    <input class="global" type="text" placeholder="Cidade">
+                    <input class="global" type="number" placeholder="Cep">
                     <button class="advance">Avançar para Experiência</button>
                 </div>
             </section>
-            <!--<section class="experience">
+
+            <!--Seção de Experiência-->
+
+            <section class="experience">
                 <header>
                     <h1><span class="blue">Compartilhe concosco</span> a sua experiência</h1>
                     <h4>Comece com o seu trabalho recente.</h4>
@@ -104,14 +109,16 @@
                     <input class="global" type="text" placeholder="Nome da Empresa">
                     <input class="global" type="text" placeholder="Período (Ex. 2 anos)">
                     <input class="global double high" type="text" placeholder="Escreva a sua experiência de trabalho">
-                    <div class="add-remove">
-                        <input type="checkbox" id="add-button"/>
-                        <span class="add pointer">&#10004;</span>
-                    </div>
-                    <div class="add-remove">
-                        <input type="checkbox" id="remove-button"/>
-                        <span class="remove pointer">&#10006;</span>
-                    </div>
+                    <article class="add-remove-box">
+                        <div class="add-remove">
+                            <input type="checkbox" id="add-button"/>
+                            <span class="add pointer">&#10004;</span>
+                        </div>
+                        <div class="add-remove">
+                            <input type="checkbox" id="remove-button"/>
+                            <span class="remove pointer">&#10006;</span>
+                        </div>
+                    </article>
                     <button class="advance">Avançar para Formaçâo</button>
                     <button class="back">Voltar para Contatos</button>
                 </div>
@@ -122,6 +129,9 @@
                     <button class="advance">Não tenho Experiência</button>
                 </div>
             </section>
+
+            <!--Seção de Formação-->
+
             <section class="graduation">
                 <header>
                     <h1><span class="blue">Insira</span> suas informações sobre formação</h1>
@@ -130,19 +140,24 @@
                 <div class="input-content">
                     <input class="global" type="text" placeholder="Instituiçâo/faculdade">
                     <input class="global" type="text" placeholder="Titulo/Certificado">
-                    <input class="global options" type="text" placeholder="Duração (Ex. 100 horas). opicional*">
-                    <div class="add-remove">
-                        <input type="checkbox" id="add-button"/>
-                        <span class="add pointer">&#10004;</span>
-                    </div>
-                    <div class="add-remove">
-                        <input type="checkbox" id="remove-button"/>
-                        <span class="remove pointer">&#10006;</span>
-                    </div>
+                    <input class="global double" type="text" placeholder="Duração (Ex. 100 horas). opicional*">
+                    <article class="add-remove-box">
+                        <div class="add-remove">
+                            <input type="checkbox" id="add-button"/>
+                            <span class="add pointer">&#10004;</span>
+                        </div>
+                        <div class="add-remove">
+                            <input type="checkbox" id="remove-button"/>
+                            <span class="remove pointer">&#10006;</span>
+                        </div>
+                    </article>
                     <button class="advance"> Avançar Conhecimentos </button>
                     <button class="back">Voltar para Experiência</button>
                 </div>
             </section>
+
+            <!--Seção de Conhecimento-->
+
             <section class="knowledge">
                 <header>
                     <h1><span class="blue">Conte para nós </span> quais seus conhecimentos</h1>
@@ -157,30 +172,40 @@
                         <option>avançado</option>
                         <option>domínio</option>
                     </select>
-                    <div class="add-remove">
-                        <input type="checkbox" id="add-button"/>
-                        <span class="add pointer">&#10004;</span>
-                    </div>
-                    <div class="add-remove">
-                        <input type="checkbox" id="remove-button"/>
-                        <span class="remove pointer">&#10006;</span>
-                    </div><br>
+                    <article class="add-remove-box">
+                        <div class="add-remove">
+                            <input type="checkbox" id="add-button"/>
+                            <span class="add pointer">&#10004;</span>
+                        </div>
+                        <div class="add-remove">
+                            <input type="checkbox" id="remove-button"/>
+                            <span class="remove pointer">&#10006;</span>
+                        </div>
+                    </article>
                     <button class="advance"> Avançar Sobre </button>
                     <button class="back">Voltar para Formaçâo</button>
                 </div>
             </section>
+
+            <!--Seção Sobre-->
+
             <section class="summary">
                 <header>
                     <h1><span class="blue">Escreva </span> o seu resumo profissional</h1>
-                    <h4>Fale um pouco da sua experiência geral.</h4>
+                    <h4>Fale um pouco da sua experiência geral</h4>
                 </header>
                 <div class="input-content">
                     <input class="global double high" type="text" placeholder="Fale um pouco sobre você">
-                    <button class="advance"> Avançar Concluir </button>
+                    <button class="advance"> Avançar para Concluir </button>
                     <button class="back">Voltar para Conhecimentos</button>
                 </div>
             </section>
+
+            <!--Seção de Conclusão-->
+
             <section class="conclude">
+                <h1>Conclua a estilização do seu <span class="blue">Currículo</span></h1>
+                <h4>Altere as cores do seu currículo</h4>
                 <div class="input-content">
                     <select class="selection">
                         <option selected>Alterar a Fonte</option>
@@ -194,6 +219,7 @@
                         <option>Segoe UI</option>
                         <option>Anek Latin</option>
                     </select>
+                    <h4>Altere as cores do seu currículo</h4>
                     <article class="colors">
                         <figure>
                             <figcaption>Alterar cor da folha</figcaption>
@@ -211,14 +237,13 @@
                             <input type="color">
                         </figure>
                     </article>
-                    <label>Adcionar Foto 
+                    <h4>Adicione uma foto ao seu currículo</h4>
                         <span class="selection fake-input">
                             <input class="none" type="file">
                         </span>
                     </label>
-                    <label>Rede Social
-                        <input class="global" type="email" placeholder="endereço">
-                    </label>
+                    <h4>Adicione suas Rede Sociais</h4>
+                    <input class="global" type="email" placeholder="endereço">
                     <select class="selection">
                         <option selected>Selecione a rede</option>
                         <option>Linkedln</option>
@@ -229,18 +254,20 @@
                         <option>Página de Portifólio</option>
                         <option>Outro</option>
                     </select>
-                    <div class="add-remove">
-                        <input type="checkbox" id="add-button"/>
-                        <span class="add pointer">&#10004;</span>
-                    </div>
-                    <div class="add-remove">
-                        <input type="checkbox" id="remove-button"/>
-                        <span class="remove pointer">&#10006;</span>
-                    </div>
+                    <article class="add-remove-box">
+                        <div class="add-remove">
+                            <input type="checkbox" id="add-button"/>
+                            <span class="add pointer">&#10004;</span>
+                        </div>
+                        <div class="add-remove">
+                            <input type="checkbox" id="remove-button"/>
+                            <span class="remove pointer">&#10006;</span>
+                        </div>
+                    </article>
                     <button class="pdf">Salvar em PDF</button>
                     <button class="back">Editar<br>Novamente</button>
                 </div>
-            </section>-->
+            </section>
         </main>
 
         <!--Seção do CV-->
@@ -252,27 +279,27 @@
                 </figure>
                 <div class="about">
                     <h4>SOBRE MIM</h4>
-                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe dolore soluta, esse beatae minus eveniet atque dignissimos qui ab. Cumque quaerat qui repellat esse architecto dolore perferendis sunt facere!</h6>
+                    <h6>Carl Johnson nasceu na casa de sua família em 13 de junho de 1968, na cidade de Los Santos. Filho de Beverly Johnson e irmão de Sean Johnson (Sweet), Kendl Johnson e Brian Johnson, CJ nunca chegou a conhecer seu pai e é amigo desde criança de Melvin Harris (Big Smoke) e Lance Wilson (Ryder). Durante o jogo, o personagem revela em uma de suas recordações que Ryder costumava a traficar drogas desde quando ele tinha apenas dez anos</h6>
                 </div>
                 <ul class="social-medias">
-                    <li class="extra-data"><img src="./images/linkedIn-icon.png" class="icon extra-data">LinkedIndoUsuario@gmail.com</li>
-                    <li class="extra-data"><img src="./images/github-icon.png" class="icon extra-data">GithubdoUsuario@gmail.com</li>
-                    <li class="extra-data"><img src="./images/internet-icon.png" class="icon extra-data">BlogdoUsuario@gmail.com</li>
-                    <li class="extra-data"><img src="./images/internet-icon.png" class="icon extra-data">PortifoliodoUsuario@gmail.com</li>
+                    <li class="extra-data social-link"><img src="./images/linkedIn-icon.png" class="icon extra-data">Carl_johnson/42323</li>
+                    <li class="extra-data social-link"><img src="./images/github-icon.png" class="icon extra-data">Carl_johnson/repo</li>
+                    <li class="extra-data social-link"><img src="./images/internet-icon.png" class="icon extra-data">blog_do_Carl.com</li>
+                    <li class="extra-data social-link"><img src="./images/internet-icon.png" class="icon extra-data">PortifoliodoCarl.com</li>
                 </ul>
             </div>
             <div class="body">
                 <div class="main-info">
                     <div class="name">
-                        <h1 class="first-name">Mauro</h1>
-                        <h1 class="surname">Domingues</h1>
-                        <h4 class="title">Programador POG</h4>
-                        <h5 class="age">22 anos</h5>
+                        <h1 class="first-name">Carl</h1>
+                        <h1 class="surname">Johnson</h1>
+                        <h4 class="title">Alicerce do crime</h4>
+                        <h5 class="age">54 anos</h5>
                     </div>
                     <div class="adress">
-                        <h4 class="phone-number extra-data"><img src="./images/phone-icon.png" class="icon extra-data">35 991248514</h4><hr class="extra-data">
-                        <h4 class="contact-email extra-data"><img src="./images/email-icon.png" class="icon extra-data">maurinho.villa@hotmail.com</h4><hr class="extra-data">
-                        <h4 class="id extra-data"><img src="./images/map-landmarker-icon.png" class="icon extra-data">Avenida Ivo guersoni 184, Bairro Vila Beatriz, Pouso Alegre - 37555600</h4>
+                        <h4 class="phone-number extra-data"><img src="./images/phone-icon.png" class="icon extra-data">12 34567890</h4><hr class="extra-data">
+                        <h4 class="contact-email extra-data"><img src="./images/email-icon.png" class="icon extra-data">carl_johnson@hotmail.com</h4><hr class="extra-data">
+                        <h4 class="id extra-data"><img src="./images/map-landmarker-icon.png" class="icon extra-data">Rua Groove Street, número 13, Bairro Davis - 012347893</h4>
                     </div>
                 </div>
                 <div class="xp-info">
@@ -280,7 +307,7 @@
                     <div class="container">
                         <div class="company-name">
                             <h4 class="extra-data"><img src="./images/map-pin-marker-icon.png" class="icon extra-data">Trevor Philips Industries</h4>
-                            <h6 class="title">Período: 1 ano</h6>
+                            <h6 class="title">Período: 5 anos</h6>
                         </div>
                         <div class="company-xp">
                             <h5 class="extra-data">Aviãozinho</h5>
@@ -290,17 +317,17 @@
                     <div class="container">
                         <div class="company-name">
                             <h4 class="extra-data"><img src="./images/map-pin-marker-icon.png" class="icon extra-data">Michael de Santa Enterprise</h4>
-                            <h6 class="title">Período: 2 anos</h6>
+                            <h6 class="title">Período: 14 anos</h6>
                         </div>
                         <div class="company-xp">
-                            <h5 class="extra-data">Aviãozinho</h5>
+                            <h5 class="extra-data">Agiota</h5>
                             <h6 class="extra-data desc">Eliminações furtivos em geral</h6>
                         </div>
                     </div>
                     <div class="container">
                         <div class="company-name">
                             <h4 class="extra-data"><img src="./images/map-pin-marker-icon.png" class="icon extra-data">Franklin Clinton Team</h4>
-                            <h6 class="title">Período: 3 anos</h6>
+                            <h6 class="title">Período: 6 anos</h6>
                         </div>
                         <div class="company-xp">
                             <h5 class="extra-data">Piloto</h5>
@@ -312,34 +339,34 @@
                     <h1 class="extra-data">Formação</h1><hr class="extra-data">
                     <div class="container">
                         <div class="grad-name">
-                            <h4 class="extra-data">Startse Tech Academy</h4>
-                            <h6>Período: 100 horas</h6>
+                            <h4 class="extra-data">Escola Criminal de San Andreas</h4>
+                            <h6>Período: 2 anos</h6>
                         </div>
                         <div class="grad-description">
-                            <h5 class="extra-data">Desenvolvimento Web Full Stack</h5>
-                            <h6 class="extra-data desc">HTML, CSS, JavaScript, Node.js, MySQL</h6>
+                            <h5 class="extra-data">Logística</h5>
+                            <h6 class="extra-data desc">Logística e gerenciamento e cargas pesadas sem ser detectado pela polícia</h6>
                         </div>
                     </div>
                     <div class="container">
                         <div class="grad-name">
-                            <h4 class="extra-data">Startse Tech Academy</h4>
-                            <h6>Período: 100 horas</h6>
+                            <h4 class="extra-data">Lições da vida</h4>
+                            <h6>Período: indeterminado</h6>
                         </div>
                         <div class="grad-description">
-                            <h5 class="extra-data">Desenvolvimento POG</h5>
-                            <h6 class="extra-data desc">Nem te conto</h6>
+                            <h5 class="extra-data">Sobrevivência</h5>
+                            <h6 class="extra-data desc">Sobrevivência e auto defesa em ambientes hostis com recursos mínimos</h6>
                         </div>
                     </div>
                 </div>
                 <div class="skill-info">
-                    <h1 class="extra-data">Experiência</h1><hr class="extra-data">
-                    <h5 class="extra-data">• Nível básico em programação</h5>
-                    <h5 class="extra-data">• Nível médio em inglês</h5>
-                    <h5 class="extra-data">• Nível avançado em excel</h5>
-                    <h5 class="extra-data">• Domínio em programação orientada a gambiarra (POG)</h5>
+                    <h1 class="extra-data">Conhecimento</h1><hr class="extra-data">
+                    <h5 class="extra-data">• Nível básico em educação</h5>
+                    <h5 class="extra-data">• Nível médio em combate a curta distância</h5>
+                    <h5 class="extra-data">• Nível avançado em  camuflagem de materiais ilícitos</h5>
+                    <h5 class="extra-data">• Domínio em te fazer correr por sua vida</h5>
                 </div>
             </div>
         </section>
-        <script></script>
+        <script type="module" src="./js/index.js"></script>
     </body>
 </html>

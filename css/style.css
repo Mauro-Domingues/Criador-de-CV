@@ -143,7 +143,7 @@ button:active{
 main{
     position: initial;
     width: 700px;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #F7F7FC;
     padding: 10px;
     align-items: center;
@@ -194,26 +194,32 @@ main .main-header{
 
 /* Adicionar e Remover Itens */
 
+article.add-remove-box{
+    width: 85%;
+    margin-right: 15%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 div.add-remove{
     display: flex;
     align-items: center;
+    border-radius: 50%;
     z-index: 1;
 }
 
 #add-button, #remove-button {
-    position: absolute;
     cursor: pointer;
     opacity: 0;
-    width: 25px;
+    width: 40px;
     height: 25px;
     z-index: 2;
 }
 
 .pointer {
     position: absolute;
-    border-radius: 50%;
     height: 25px;
-    width: 25px;
+    width: 40px;
     z-index: 1;
 }
 
@@ -238,17 +244,20 @@ div.add-remove:active{
 main section{
     display: flex;
     flex-direction: column;
+    padding-bottom: 40px;
 }
 
 main section h1 {
     font-size: 2.5rem;
     margin: 50px auto 25px auto;
+    width: 100%;
 }
 
 main section h4 {
     color: #7171AC;
     font-size: 1.3rem;
-    margin: 25px;
+    margin: 25px auto 25px auto;
+    width: 100%;
 }
 
 .input-content{
@@ -285,10 +294,6 @@ input.high{
     height: 110px;
 }
 
-input.options{
-    width: 400px;
-}
-
 /* Seção de Experiência */
 
 .error-box{
@@ -299,12 +304,12 @@ input.options{
     color: #7171AC;
     position: absolute;
     top:20%;
-    display: flex;
+    display: none;
     align-self: center;
     flex-direction: column;
     border-radius: 5px;
     padding-bottom: 25px;
-    display: none;
+    z-index: 3;
 }
 
 .error-box h1{
@@ -329,8 +334,11 @@ input.options{
 article.colors{
     display: flex;
     justify-content: space-around;
-    margin: 50px auto;
     width: 100%;
+}
+
+input[type="color"]{
+    cursor: pointer;
 }
 
 input.none{
@@ -350,7 +358,7 @@ span.fake-input{
     z-index: 1;
     background: url('../images/select-file.png');
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: center;
     background-size: 300px;
 }
 
@@ -358,28 +366,25 @@ span.fake-input:hover{
     border: 1px solid #1688FE;
 }
 
-label{
-    font-size: 1.4rem;
-    font-weight: bolder;
+.social-link{
+    font-size: 10px;
 }
 
 /* Seção do CV */
 
 .curriculum{
+    display: flex;
+    position: fixed;
+    top: 20px;
+    left: 800px;
     width: 620px;
     height: 877px;
+    font-size: 14px;
     background-color: #fff;
-    position: absolute;
-    top:50%;
-    left: 75%;
-    transform: translate(-50%,-50%);
-    display: flex;
-    flex-direction: row;
-    font-size: 1rem;
-    border-radius: 2px;
 }
 
 .curriculum * {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     word-break: break-word;
     align-items: center;
@@ -412,12 +417,12 @@ label{
 
 .about{
     height: 50%;
-    padding-top: 15px;
+    padding-top: 20px;
     justify-content: flex-start;
 }
 
 .about h4{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .social-medias{
@@ -436,7 +441,7 @@ label{
 }
 
 .body > *{
-    flex-direction: row;
+    flex-direction: column;
     width: 99%;
 }
 
@@ -458,7 +463,7 @@ label{
 .icon{
     position: relative;
     left: 0;
-    top: -4px;
+    top: -6px;
     width: 20px;
     margin-right: 5px;
     align-self: flex-start;
@@ -472,6 +477,7 @@ hr{
 
 .main-info{
     height: 20%;
+    flex-direction: row;
 }
 
 .name{
@@ -503,7 +509,6 @@ hr{
 
 .xp-info{
     height: 35%;
-    flex-direction: column;
     justify-content: flex-start;
 }
 
@@ -522,7 +527,6 @@ hr{
 
 .grad-info{
     height: 25%;
-    flex-direction: column;
     justify-content: flex-start;
 }
 
@@ -530,6 +534,5 @@ hr{
 
 .skill-info{
     height: 20%;
-    flex-direction: column;
     justify-content: flex-start;
 }
