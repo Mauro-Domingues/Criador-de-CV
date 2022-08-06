@@ -99,6 +99,7 @@ button{
     letter-spacing: 1px;
     cursor: pointer;
     color: #fff;
+    word-break: break-word;
     border: 1px solid #fff;
     background-repeat: no-repeat;
     background-size: 35px;
@@ -115,8 +116,7 @@ button:active{
 }
 
 .advance{
-    text-align: left;
-    padding-left: 40px;
+    padding-right: 50px;
     background-position: right 12px center;
     background-image: url('../images/right-arrow-icon.png');
     background-color: #1688FE;
@@ -124,8 +124,7 @@ button:active{
 }
 
 .back{
-    text-align: right;
-    padding-right: 40px;
+    padding-left: 50px;
     background-position: left 12px center;
     background-image: url('../images/left-arrow-icon.png');
     background-color: #F37112;
@@ -153,7 +152,7 @@ main{
 /* Barra de Orientação das Seções */
 
 main .main-header{
-    display: flex;
+    display: none;
     justify-content: space-around;
     border-bottom: 0.7px solid #111;
     padding: 5px;
@@ -242,7 +241,7 @@ div.add-remove:active{
 /* Seções */
 
 main section{
-    display: flex;
+    display: none;
     flex-direction: column;
     padding-bottom: 40px;
 }
@@ -294,41 +293,6 @@ input.high{
     height: 110px;
 }
 
-/* Seção de Experiência */
-
-.error-box{
-    width: 450px;
-    height: 400px;
-    background-color: #fff;
-    box-shadow: 0 0 5px #1688FE;
-    color: #7171AC;
-    position: absolute;
-    top:20%;
-    display: none;
-    align-self: center;
-    flex-direction: column;
-    border-radius: 5px;
-    padding-bottom: 25px;
-    z-index: 3;
-}
-
-.error-box h1{
-    background-color: #1688FE;
-    align-self: flex-start;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    height: 150px;
-    border-radius: 5px;
-    margin: 0;
-    margin-bottom: 20px;
-    background-image: url('../images/exclamation-icon.png');
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-position-x: 15px;
-    background-size: 40px;
-}
-
 /* Seção de Conclusão */
 
 article.colors{
@@ -373,7 +337,7 @@ span.fake-input:hover{
 /* Seção do CV */
 
 .curriculum{
-    display: flex;
+    display: none;
     position: fixed;
     top: 20px;
     left: 800px;
@@ -381,10 +345,10 @@ span.fake-input:hover{
     height: 877px;
     font-size: 14px;
     background-color: #fff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .curriculum * {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     word-break: break-word;
     align-items: center;

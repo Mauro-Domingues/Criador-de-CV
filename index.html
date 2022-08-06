@@ -22,7 +22,7 @@
                     <h1 class="orange title">Editor de CV fácil </h1>
                     <h1 class="blue title">Online</h1>
                     <h4 class="orange subtitle">Crie seu curriculo profissional em poucos minutos</h4>
-                    <button class="back">CRIAR MEU CV</button>
+                    <button class="back presentation-go-btn">Criar meu CV</button>
                 
                     <article class="presentation-info">
                         <figure>
@@ -41,7 +41,7 @@
                 </div>
             </header>
             <figure class="presentation-example">
-                <img src="./images/curriculum-example.png" width="500px" style="display: none;"> <!--Retirar o display none-->
+                <img src="./images/curriculum-example.png" width="500px">
             </figure>
         </section>
 
@@ -51,28 +51,28 @@
             
             <header class="main-header">
                 <article>
-                    <h4 class="verified-text"> CONTATO </h4>
+                    <h4 class="verified-text"> Contato </h4>
                     <span class="verified"></span>
                 </article>
                 <article>
-                    <h4 class="non-verified-text"> EXPERIÊNCIA </h4>
-                    <span class="non-verified"></span>
+                    <h4 id="xp-hnv" class="non-verified-text"> Experiência </h4>
+                    <span id="xp-snv" class="non-verified"></span>
                 </article>
                 <article>
-                    <h4 class="non-verified-text"> FORMACÂO </h4>
-                    <span class="non-verified"></span>
+                    <h4 id="f-hnv" class="non-verified-text"> Formação </h4>
+                    <span id="f-snv" class="non-verified"></span>
                 </article>
                 <article>
-                    <h4 class="non-verified-text"> CONHECIMENTOS </h4>
-                    <span class="non-verified"></span>
+                    <h4 id="k-hnv" class="non-verified-text"> Conhecimento </h4>
+                    <span id="k-snv" class="non-verified"></span>
                 </article>
                 <article>
-                    <h4 class="non-verified-text"> SOBRE </h4>
-                    <span class="non-verified"></span>
+                    <h4 id="a-hnv" class="non-verified-text"> Sobre </h4>
+                    <span id="a-snv" class="non-verified"></span>
                 </article>
                 <article>
-                    <h4 class="non-verified-text"> CONCLUIR </h4>
-                    <span class="non-verified"></span>
+                    <h4 id="c-hnv" class="non-verified-text"> Concluir </h4>
+                    <span id="c-snv" class="non-verified"></span>
                 </article>
             </header>
 
@@ -93,7 +93,7 @@
                     <input class="global double" type="text" placeholder="Endereço (rua, número, bairro)">
                     <input class="global" type="text" placeholder="Cidade">
                     <input class="global" type="number" placeholder="Cep">
-                    <button class="advance">Avançar para Experiência</button>
+                    <button class="advance contact-go-btn">Avançar para Experiência</button>
                 </div>
             </section>
 
@@ -102,13 +102,13 @@
             <section class="experience">
                 <header>
                     <h1><span class="blue">Compartilhe concosco</span> a sua experiência</h1>
-                    <h4>Comece com o seu trabalho recente.</h4>
+                    <h4>Comece com o seu trabalho recente</h4>
                 </header>
                 <div class="input-content">
-                    <input class="global" type="text" placeholder="Cargo">
-                    <input class="global" type="text" placeholder="Nome da Empresa">
-                    <input class="global" type="text" placeholder="Período (Ex. 2 anos)">
-                    <input class="global double high" type="text" placeholder="Escreva a sua experiência de trabalho">
+                    <input id="position" class="global" type="text" placeholder="Cargo">
+                    <input id="company-name" class="global" type="text" placeholder="Nome da Empresa">
+                    <input id="period" class="global" type="text" placeholder="Período (Ex. 2 anos)">
+                    <input id="work-xp" class="global double high" type="text" placeholder="Escreva a sua experiência de trabalho">
                     <article class="add-remove-box">
                         <div class="add-remove">
                             <input type="checkbox" id="add-button"/>
@@ -119,14 +119,8 @@
                             <span class="remove pointer">&#10006;</span>
                         </div>
                     </article>
-                    <button class="advance">Avançar para Formaçâo</button>
-                    <button class="back">Voltar para Contatos</button>
-                </div>
-                <div class="error-box">
-                    <h1>Mais Informações necessárias</h1>
-                    <h3>Você nâo listou nenhuma Experiência de trabalho</h3>
-                    <button class="back">Adcionar Experiência</button>
-                    <button class="advance">Não tenho Experiência</button>
+                    <button class="back experience-back-btn">Voltar para Contato</button>
+                    <button class="advance experience-go-btn">Avançar para Formação</button>
                 </div>
             </section>
 
@@ -135,7 +129,7 @@
             <section class="graduation">
                 <header>
                     <h1><span class="blue">Insira</span> suas informações sobre formação</h1>
-                    <h4>Informe um curso tecnico/bacharelado ou outro.</h4>
+                    <h4>Informe um curso técnico/bacharelado ou outro</h4>
                 </header>
                 <div class="input-content">
                     <input class="global" type="text" placeholder="Instituiçâo/faculdade">
@@ -151,8 +145,8 @@
                             <span class="remove pointer">&#10006;</span>
                         </div>
                     </article>
-                    <button class="advance"> Avançar Conhecimentos </button>
-                    <button class="back">Voltar para Experiência</button>
+                    <button class="back graduation-back-btn"> Voltar para Experiência </button>
+                    <button class="advance graduation-go-btn"> Avançar para Conhecimento </button>
                 </div>
             </section>
 
@@ -161,7 +155,7 @@
             <section class="knowledge">
                 <header>
                     <h1><span class="blue">Conte para nós </span> quais seus conhecimentos</h1>
-                    <h4>Comece com aquele que você tem mais experiência.</h4>
+                    <h4>Comece com aquele que você tem mais experiência</h4>
                 </header>
                 <div class="input-content">
                     <input class="global" type="text" placeholder="Conhecimento">
@@ -182,8 +176,8 @@
                             <span class="remove pointer">&#10006;</span>
                         </div>
                     </article>
-                    <button class="advance"> Avançar Sobre </button>
-                    <button class="back">Voltar para Formaçâo</button>
+                    <button class="back knowledge-back-btn">Voltar para Formação</button>
+                    <button class="advance knowledge-go-btn"> Avançar para Sobre </button>
                 </div>
             </section>
 
@@ -196,8 +190,8 @@
                 </header>
                 <div class="input-content">
                     <input class="global double high" type="text" placeholder="Fale um pouco sobre você">
-                    <button class="advance"> Avançar para Concluir </button>
-                    <button class="back">Voltar para Conhecimentos</button>
+                    <button class="back summary-back-btn"> Voltar para Conhecimento </button>
+                    <button class="advance summary-go-btn"> Avançar para Concluir </button>
                 </div>
             </section>
 
@@ -247,12 +241,8 @@
                     <select class="selection">
                         <option selected>Selecione a rede</option>
                         <option>Linkedln</option>
-                        <option>Instagram</option>
-                        <option>Facebook</option>
                         <option>GitHub</option>
                         <option>Site Pessoal</option>
-                        <option>Página de Portifólio</option>
-                        <option>Outro</option>
                     </select>
                     <article class="add-remove-box">
                         <div class="add-remove">
@@ -264,8 +254,8 @@
                             <span class="remove pointer">&#10006;</span>
                         </div>
                     </article>
+                    <button class="back conclude-back-btn">Voltar para Sobre</button>
                     <button class="pdf">Salvar em PDF</button>
-                    <button class="back">Editar<br>Novamente</button>
                 </div>
             </section>
         </main>
