@@ -21,7 +21,7 @@
                     <h2 class="logo">Criar CV</h2>
                     <h1 class="orange title">Editor de CV fácil </h1>
                     <h1 class="blue title">Online</h1>
-                    <h4 class="orange subtitle">Crie seu curriculo profissional em poucos minutos</h4>
+                    <h4 class="orange subtitle">Crie seu currículo profissional em poucos minutos</h4>
                     <button class="back presentation-go-btn">Criar meu CV</button>
                 
                     <article class="presentation-info">
@@ -30,11 +30,11 @@
                             <img src="./images/brush-icon.png" width="75px">
                         </figure>
                         <figure>
-                            <figcaption>2. Baixe seu curriculo em PDF</figcaption>
+                            <figcaption>2. Baixe seu currículo em PDF</figcaption>
                             <img src="./images/pdf-icon.png" width="75px">
                         </figure>
                         <figure>
-                            <figcaption>3. Imprima seu curriculo em segundos</figcaption>
+                            <figcaption>3. Imprima seu currículo em segundos</figcaption>
                             <img src="./images/print-message-icon.png" width="75px">
                         </figure>
                     </article>
@@ -45,7 +45,7 @@
             </figure>
         </section>
 
-        <main>
+        <main class="main-section">
 
             <!--Header das páginas secundárias-->
             
@@ -84,15 +84,15 @@
                     <h4>Assim um recrutador podera entrar em contato com você.</h4>
                 </header>
                 <div class="input-content">
-                    <input class="global" type="text" placeholder="Nome">
-                    <input class="global" type="text" placeholder="Sobrenome">
-                    <input class="global" type="number" placeholder="Idade">
-                    <input class="global" type="text" placeholder="Título do perfil">
-                    <input class="global" type="number" placeholder="Telefone">
-                    <input class="global" type="email" placeholder="E-mail">
-                    <input class="global double" type="text" placeholder="Endereço (rua, número, bairro)">
-                    <input class="global" type="text" placeholder="Cidade">
-                    <input class="global" type="number" placeholder="Cep">
+                    <input id="name" class="global" type="text" placeholder="Nome">
+                    <input id="surname" class="global" type="text" placeholder="Sobrenome">
+                    <input id="age" class="global" type="number" placeholder="Idade">
+                    <input id="title" class="global" type="text" placeholder="Título do perfil">
+                    <input id="phone" class="global" type="number" placeholder="Telefone">
+                    <input id="email" class="global" type="email" placeholder="E-mail">
+                    <input id="adress" class="global double" type="text" placeholder="Endereço (rua, número, bairro)">
+                    <input id="city" class="global" type="text" placeholder="Cidade">
+                    <input id="cep" class="global" type="number" placeholder="Cep">
                     <button class="advance contact-go-btn">Avançar para Experiência</button>
                 </div>
             </section>
@@ -102,7 +102,7 @@
             <section class="experience">
                 <header>
                     <h1><span class="blue">Compartilhe concosco</span> a sua experiência</h1>
-                    <h4>Comece com o seu trabalho recente</h4>
+                    <h4>Comece com o seu trabalho mais antigo</h4>
                 </header>
                 <div class="input-content">
                     <input id="position" class="global" type="text" placeholder="Cargo">
@@ -111,11 +111,11 @@
                     <input id="work-xp" class="global double high" type="text" placeholder="Escreva a sua experiência de trabalho">
                     <article class="add-remove-box">
                         <div class="add-remove">
-                            <input type="checkbox" id="add-button"/>
+                            <input type="checkbox" id="add-button" class="add-xp"/>
                             <span class="add pointer">&#10004;</span>
                         </div>
                         <div class="add-remove">
-                            <input type="checkbox" id="remove-button"/>
+                            <input type="checkbox" id="remove-button" class="remove-xp"/>
                             <span class="remove pointer">&#10006;</span>
                         </div>
                     </article>
@@ -132,16 +132,17 @@
                     <h4>Informe um curso técnico/bacharelado ou outro</h4>
                 </header>
                 <div class="input-content">
-                    <input class="global" type="text" placeholder="Instituiçâo/faculdade">
-                    <input class="global" type="text" placeholder="Titulo/Certificado">
-                    <input class="global double" type="text" placeholder="Duração (Ex. 100 horas). opicional*">
+                    <input id="instituition" class="global double" type="text" placeholder="Instituição/faculdade">
+                    <input id="cert" class="global" type="text" placeholder="Titulo/Certificado">
+                    <input id="duration" class="global" type="text" placeholder="Duração *opicional">
+                    <input id="cert-description" class="global double" type="text" placeholder="Descrição">
                     <article class="add-remove-box">
                         <div class="add-remove">
-                            <input type="checkbox" id="add-button"/>
+                            <input type="checkbox" id="add-button" class="add-grad"/>
                             <span class="add pointer">&#10004;</span>
                         </div>
                         <div class="add-remove">
-                            <input type="checkbox" id="remove-button"/>
+                            <input type="checkbox" id="remove-button" class="remove-grad"/>
                             <span class="remove pointer">&#10006;</span>
                         </div>
                     </article>
@@ -158,21 +159,21 @@
                     <h4>Comece com aquele que você tem mais experiência</h4>
                 </header>
                 <div class="input-content">
-                    <input class="global" type="text" placeholder="Conhecimento">
-                    <select class="selection">
-                        <option selected>Nível</option>
-                        <option>básico</option>
-                        <option>médio</option>
-                        <option>avançado</option>
-                        <option>domínio</option>
+                    <input id="knowledge" class="global" type="text" placeholder="Conhecimento">
+                    <select id="k-level" class="selection">
+                        <option selected value="Nenhum conhecimento">Escolha o nível</option>
+                        <option>Nível básico</option>
+                        <option>Nível médio</option>
+                        <option>Nível avançado</option>
+                        <option>Domínio</option>
                     </select>
                     <article class="add-remove-box">
                         <div class="add-remove">
-                            <input type="checkbox" id="add-button"/>
+                            <input type="checkbox" id="add-button" class="k-add"/>
                             <span class="add pointer">&#10004;</span>
                         </div>
                         <div class="add-remove">
-                            <input type="checkbox" id="remove-button"/>
+                            <input type="checkbox" id="remove-button" class="k-remove"/>
                             <span class="remove pointer">&#10006;</span>
                         </div>
                     </article>
@@ -189,7 +190,7 @@
                     <h4>Fale um pouco da sua experiência geral</h4>
                 </header>
                 <div class="input-content">
-                    <input class="global double high" type="text" placeholder="Fale um pouco sobre você">
+                    <input id="about" class="global double high" type="text" placeholder="Fale um pouco sobre você">
                     <button class="back summary-back-btn"> Voltar para Conhecimento </button>
                     <button class="advance summary-go-btn"> Avançar para Concluir </button>
                 </div>
@@ -199,11 +200,10 @@
 
             <section class="conclude">
                 <h1>Conclua a estilização do seu <span class="blue">Currículo</span></h1>
-                <h4>Altere as cores do seu currículo</h4>
+                <h4>Altere a fonte do seu currículo</h4>
                 <div class="input-content">
-                    <select class="selection">
-                        <option selected>Alterar a Fonte</option>
-                        <option>Arial</option>
+                    <select id="font-family" class="selection">
+                        <option selected value="">Alterar a Fonte</option>
                         <option>Franklin</option>
                         <option>Impact</option>
                         <option>Times New Roman</option>
@@ -218,39 +218,44 @@
                         <figure>
                             <figcaption>Alterar cor da folha</figcaption>
                             <img src="./images/paint-pallete-icon.png" width="40px">
-                            <input type="color">
+                            <input id="page-color" type="color" value="#ffffff">
                         </figure>
                         <figure>
                             <figcaption>Alterar cor da faixa</figcaption>
                             <img src="./images/paint-pallete-icon.png" width="40px">
-                            <input type="color">
+                            <input id="belt-color" type="color" value="#434445">
                         </figure>
                         <figure>
-                            <figcaption>Alterar cor das letras</figcaption>
+                            <figcaption>Alterar cor das letras da folha</figcaption>
                             <img src="./images/paint-pallete-icon.png" width="40px">
-                            <input type="color">
+                            <input id="font-color" type="color" value="#000000">
+                        </figure>
+                        <figure>
+                            <figcaption>Alterar cor das letras da faixa</figcaption>
+                            <img src="./images/paint-pallete-icon.png" width="40px">
+                            <input id="belt-font-color" type="color" value="#ffffff">
                         </figure>
                     </article>
                     <h4>Adicione uma foto ao seu currículo</h4>
                         <span class="selection fake-input">
-                            <input class="none" type="file">
+                            <input id="picture-file" class="none" type="file" accept="image/*">
                         </span>
                     </label>
                     <h4>Adicione suas Rede Sociais</h4>
-                    <input class="global" type="email" placeholder="endereço">
-                    <select class="selection">
-                        <option selected>Selecione a rede</option>
-                        <option>Linkedln</option>
-                        <option>GitHub</option>
-                        <option>Site Pessoal</option>
+                    <input id="social-media" class="global" type="email" placeholder="endereço">
+                    <select id="social-media-type" class="selection">
+                        <option value="internet" selected>Selecione a rede</option>
+                        <option value="linkedIn">Linkedln</option>
+                        <option value="github">GitHub</option>
+                        <option value="internet">Site Pessoal</option>
                     </select>
                     <article class="add-remove-box">
                         <div class="add-remove">
-                            <input type="checkbox" id="add-button"/>
+                            <input type="checkbox" id="add-button" class="conclude-add"/>
                             <span class="add pointer">&#10004;</span>
                         </div>
                         <div class="add-remove">
-                            <input type="checkbox" id="remove-button"/>
+                            <input type="checkbox" id="remove-button" class="conclude-remove"/>
                             <span class="remove pointer">&#10006;</span>
                         </div>
                     </article>
@@ -264,96 +269,44 @@
 
         <section class="curriculum">
             <div class="belt">
-                <figure class="picture">
-                    <img class="get-picture" src="https://yt3.ggpht.com/a/AATXAJxMmr9sx347Lz7T9ynVf6VaNM2yk3wR0N09NG6X2g=s900-c-k-c0xffffffff-no-rj-mo">
-                </figure>
+                <div class="picture">
+                    <img class="get-picture" src="https://th.bing.com/th/id/R.06a4b188974c00e016631ae58a21eea9?rik=DPgzscCQ6M7WGw&riu=http%3a%2f%2fwww.vhv.rs%2ffile%2fmax%2f19%2f199715_circle-png.png&ehk=FW0Mefel6P1jD5mUidAgo8SFudWPfJH4K1MuloiVzww%3d&risl=&pid=ImgRaw&r=0">
+                </div>
                 <div class="about">
-                    <h4>SOBRE MIM</h4>
-                    <h6>Carl Johnson nasceu na casa de sua família em 13 de junho de 1968, na cidade de Los Santos. Filho de Beverly Johnson e irmão de Sean Johnson (Sweet), Kendl Johnson e Brian Johnson, CJ nunca chegou a conhecer seu pai e é amigo desde criança de Melvin Harris (Big Smoke) e Lance Wilson (Ryder). Durante o jogo, o personagem revela em uma de suas recordações que Ryder costumava a traficar drogas desde quando ele tinha apenas dez anos</h6>
+                    <h4 class="about-title"></h4>
+                    <h6 class="about-summary"></h6>
                 </div>
                 <ul class="social-medias">
-                    <li class="extra-data social-link"><img src="./images/linkedIn-icon.png" class="icon extra-data">Carl_johnson/42323</li>
-                    <li class="extra-data social-link"><img src="./images/github-icon.png" class="icon extra-data">Carl_johnson/repo</li>
-                    <li class="extra-data social-link"><img src="./images/internet-icon.png" class="icon extra-data">blog_do_Carl.com</li>
-                    <li class="extra-data social-link"><img src="./images/internet-icon.png" class="icon extra-data">PortifoliodoCarl.com</li>
                 </ul>
             </div>
             <div class="body">
                 <div class="main-info">
                     <div class="name">
-                        <h1 class="first-name">Carl</h1>
-                        <h1 class="surname">Johnson</h1>
-                        <h4 class="title">Alicerce do crime</h4>
-                        <h5 class="age">54 anos</h5>
+                        <h1 class="first-name"></h1>
+                        <h1 class="surname"></h1>
+                        <h4 class="c-title"></h4>
+                        <h5 class="age"></h5>
                     </div>
                     <div class="adress">
-                        <h4 class="phone-number extra-data"><img src="./images/phone-icon.png" class="icon extra-data">12 34567890</h4><hr class="extra-data">
-                        <h4 class="contact-email extra-data"><img src="./images/email-icon.png" class="icon extra-data">carl_johnson@hotmail.com</h4><hr class="extra-data">
-                        <h4 class="id extra-data"><img src="./images/map-landmarker-icon.png" class="icon extra-data">Rua Groove Street, número 13, Bairro Davis - 012347893</h4>
+                        <h4 class="phone-number extra-data"><img src="./images/phone-icon.png" class="icon extra-data"></h4><hr class="extra-data">
+                        <h4 class="contact-email extra-data"><img src="./images/email-icon.png" class="icon extra-data"></h4><hr class="extra-data">
+                        <h4 class="id extra-data"><img src="./images/map-landmarker-icon.png" class="icon extra-data"></h4>
                     </div>
                 </div>
                 <div class="xp-info">
                     <h1 class="extra-data">Experiência</h1><hr class="extra-data">
-                    <div class="container">
-                        <div class="company-name">
-                            <h4 class="extra-data"><img src="./images/map-pin-marker-icon.png" class="icon extra-data">Trevor Philips Industries</h4>
-                            <h6 class="title">Período: 5 anos</h6>
-                        </div>
-                        <div class="company-xp">
-                            <h5 class="extra-data">Aviãozinho</h5>
-                            <h6 class="extra-data desc">Entrega de encomendas em geral</h6>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="company-name">
-                            <h4 class="extra-data"><img src="./images/map-pin-marker-icon.png" class="icon extra-data">Michael de Santa Enterprise</h4>
-                            <h6 class="title">Período: 14 anos</h6>
-                        </div>
-                        <div class="company-xp">
-                            <h5 class="extra-data">Agiota</h5>
-                            <h6 class="extra-data desc">Eliminações furtivos em geral</h6>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="company-name">
-                            <h4 class="extra-data"><img src="./images/map-pin-marker-icon.png" class="icon extra-data">Franklin Clinton Team</h4>
-                            <h6 class="title">Período: 6 anos</h6>
-                        </div>
-                        <div class="company-xp">
-                            <h5 class="extra-data">Piloto</h5>
-                            <h6 class="extra-data desc">Corridas de rua em geral</h6>
-                        </div>
-                    </div>
+                    <ul class="xp-list">
+                    </ul>
                 </div>
                 <div class="grad-info">
-                    <h1 class="extra-data">Formação</h1><hr class="extra-data">
-                    <div class="container">
-                        <div class="grad-name">
-                            <h4 class="extra-data">Escola Criminal de San Andreas</h4>
-                            <h6>Período: 2 anos</h6>
-                        </div>
-                        <div class="grad-description">
-                            <h5 class="extra-data">Logística</h5>
-                            <h6 class="extra-data desc">Logística e gerenciamento e cargas pesadas sem ser detectado pela polícia</h6>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="grad-name">
-                            <h4 class="extra-data">Lições da vida</h4>
-                            <h6>Período: indeterminado</h6>
-                        </div>
-                        <div class="grad-description">
-                            <h5 class="extra-data">Sobrevivência</h5>
-                            <h6 class="extra-data desc">Sobrevivência e auto defesa em ambientes hostis com recursos mínimos</h6>
-                        </div>
-                    </div>
+                    <h1 class="extra-data grad-data">Formação</h1><hr class="extra-data">
+                    <ul class="grad-list"></ul>
+                    </ul>
                 </div>
                 <div class="skill-info">
                     <h1 class="extra-data">Conhecimento</h1><hr class="extra-data">
-                    <h5 class="extra-data">• Nível básico em educação</h5>
-                    <h5 class="extra-data">• Nível médio em combate a curta distância</h5>
-                    <h5 class="extra-data">• Nível avançado em  camuflagem de materiais ilícitos</h5>
-                    <h5 class="extra-data">• Domínio em te fazer correr por sua vida</h5>
+                    <ul class="skill-list">
+                    </ul>
                 </div>
             </div>
         </section>

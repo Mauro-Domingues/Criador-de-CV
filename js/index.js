@@ -1,5 +1,23 @@
+// Funções importadas
+
+import { contactSection } from "./contact.js"
+import { experienceSection } from "./experience.js"
+import { graduationSection } from "./graduation.js"
+import { knowledgeSection } from "./knowledge.js"
+import { summarySection } from "./summary.js"
+import { concludeSection } from "./conclude.js"
+
+contactSection()
+experienceSection()
+graduationSection()
+knowledgeSection()
+summarySection()
+summarySection()
+concludeSection()
+
 // Seções
 
+export const main = document.querySelector(".main-section")
 const presentationContainer = document.querySelector(".presentation-container")
 const mainHeader = document.querySelector(".main-header")
 const contact = document.querySelector(".contact")
@@ -39,8 +57,9 @@ const concludeBackBtn = document.querySelector(".conclude-back-btn")
 
 // Avançar para Contato
 
-presentationGoBtn.addEventListener("click", function(){
+presentationGoBtn.addEventListener("click", () => {
     presentationContainer.style.display = "none"
+    main.style.display = "block"
     mainHeader.style.display = "flex"
     contact.style.display = "flex"
     curriculum.style.display = "flex"
@@ -48,7 +67,7 @@ presentationGoBtn.addEventListener("click", function(){
 
 // Avançar para Experiência
 
-contactGoBtn.addEventListener("click", function(){
+contactGoBtn.addEventListener("click", () => {
     contact.style.display = "none"
     experience.style.display = "flex"
     xpHNV.classList.remove('non-verified-text')
@@ -59,7 +78,7 @@ contactGoBtn.addEventListener("click", function(){
 
 // Voltar para contato
 
-experienceBackBtn.addEventListener("click", function(){
+experienceBackBtn.addEventListener("click", () => {
     experience.style.display = "none"
     contact.style.display = "flex"
     xpHNV.classList.remove("verified-text")
@@ -70,7 +89,7 @@ experienceBackBtn.addEventListener("click", function(){
 
 // Avançar para Graduação
 
-experienceGoBtn.addEventListener("click", function(){
+experienceGoBtn.addEventListener("click", () => {
     experience.style.display = "none"
     graduation.style.display = "flex"
     fHNV.classList.remove('non-verified-text')
@@ -81,7 +100,7 @@ experienceGoBtn.addEventListener("click", function(){
 
 // Voltar para Experiência
 
-graduationBackBtn.addEventListener("click", function(){
+graduationBackBtn.addEventListener("click", () => {
     graduation.style.display = "none"
     experience.style.display = "flex"
     fHNV.classList.remove("verified-text")
@@ -92,7 +111,7 @@ graduationBackBtn.addEventListener("click", function(){
 
 // Avançar para Conhecimento
 
-graduationGoBtn.addEventListener("click", function(){
+graduationGoBtn.addEventListener("click", () => {
     graduation.style.display = "none"
     knowledge.style.display = "flex"
     kHNV.classList.remove('non-verified-text')
@@ -103,7 +122,7 @@ graduationGoBtn.addEventListener("click", function(){
 
 // Voltar para Graduação
 
-knowledgeBackBtn.addEventListener("click", function(){
+knowledgeBackBtn.addEventListener("click", () => {
     knowledge.style.display = "none"
     graduation.style.display = "flex"
     kHNV.classList.remove("verified-text")
@@ -114,7 +133,7 @@ knowledgeBackBtn.addEventListener("click", function(){
 
 // Avançar para Sobre
 
-knowledgeGoBtn.addEventListener("click", function(){
+knowledgeGoBtn.addEventListener("click", () => {
     knowledge.style.display = "none"
     summary.style.display = "flex"
     aHNV.classList.remove('non-verified-text')
@@ -125,7 +144,7 @@ knowledgeGoBtn.addEventListener("click", function(){
 
 // Voltar para Conhecimento
 
-summaryBackBtn.addEventListener("click", function(){
+summaryBackBtn.addEventListener("click", () => {
     summary.style.display = "none"
     knowledge.style.display = "flex"
     aHNV.classList.remove("verified-text")
@@ -136,7 +155,7 @@ summaryBackBtn.addEventListener("click", function(){
 
 // Avançar para Conclusão
 
-summaryGoBtn.addEventListener("click", function(){
+summaryGoBtn.addEventListener("click", () => {
     summary.style.display = "none"
     conclude.style.display = "flex"
     cHNV.classList.remove('non-verified-text')
@@ -147,7 +166,7 @@ summaryGoBtn.addEventListener("click", function(){
 
 // Voltar para Sobre
 
-concludeBackBtn.addEventListener("click", function(){
+concludeBackBtn.addEventListener("click", () => {
     conclude.style.display = "none"
     summary.style.display = "flex"
     cHNV.classList.remove("verified-text")

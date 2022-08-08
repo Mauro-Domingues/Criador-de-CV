@@ -140,7 +140,7 @@ button:active{
 /* Main */
 
 main{
-    position: initial;
+    display: none;
     width: 700px;
     min-height: 100vh;
     background-color: #F7F7FC;
@@ -330,10 +330,6 @@ span.fake-input:hover{
     border: 1px solid #1688FE;
 }
 
-.social-link{
-    font-size: 10px;
-}
-
 /* Seção do CV */
 
 .curriculum{
@@ -344,8 +340,15 @@ span.fake-input:hover{
     width: 620px;
     height: 877px;
     font-size: 14px;
-    background-color: #fff;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.social-link{
+    font-size: 10px;
+}
+
+ul{
+    width: 100%;
 }
 
 .curriculum * {
@@ -451,11 +454,11 @@ hr{
     justify-content: flex-start;
 }
 
-.name .first-name, .name .surname, .name .title, .name .age{
+.name .first-name, .name .surname, .name .c-title, .name .age{
     margin-left: 10px;
 }
 
-.title {
+.c-title {
     margin-top: 5px;
 }
 
@@ -472,7 +475,7 @@ hr{
 /* Experiência */
 
 .xp-info{
-    height: 35%;
+    height: 30%;
     justify-content: flex-start;
 }
 
@@ -490,7 +493,7 @@ hr{
 /* Formação */
 
 .grad-info{
-    height: 25%;
+    height: 30%;
     justify-content: flex-start;
 }
 
