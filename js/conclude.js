@@ -68,6 +68,8 @@ export function concludeSection(){
         const listItem = document.createElement('li')
         listItem.setAttribute('class', 'extra-data social-link')
         listItem.innerHTML = `<img src="./images/${socialMediaType.value}-icon.png" class="icon extra-data">${socialMedia.value}`
+        socialMedia.value = ""
+        socialMediaType.value = "internet"
         return listItem
     }
 
