@@ -8,6 +8,10 @@
     font-weight: bolder;
 }
 
+a{
+    color: inherit;
+}
+
 body{
     background-color: #ccc;
     font-family: 'Anek Latin', sans-serif;
@@ -344,7 +348,7 @@ span.fake-input:hover{
     left: 800px;
     transition: 1s;
     width: 620px;
-    height: 877px;
+    height: 875px;
     font-size: 14px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -476,6 +480,7 @@ hr{
     width: 60%;
     height: 100%;
     justify-content: flex-end;
+    margin-bottom: -15px;
 }
 
 /* Experiência */

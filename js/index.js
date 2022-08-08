@@ -17,7 +17,7 @@ concludeSection()
 
 // Seções
 
-export const main = document.querySelector(".main-section")
+const main = document.querySelector(".main-section")
 const presentationContainer = document.querySelector(".presentation-container")
 const mainHeader = document.querySelector(".main-header")
 const contact = document.querySelector(".contact")

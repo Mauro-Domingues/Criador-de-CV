@@ -1,5 +1,3 @@
-import { main } from "./index.js"
-
 export function concludeSection(){
 
     // Const da seção
@@ -65,15 +63,20 @@ export function concludeSection(){
 
     function addLI(){
         const listItem = document.createElement('li')
-        listItem.setAttribute('class', 'extra-data social-link')
-        listItem.innerHTML = `<img src="./images/${socialMediaType.value}-icon.png" class="icon extra-data">${socialMedia.value}`
+        listItem.setAttribute('class', 'social-link')
+        listItem.innerHTML = `<a class="extra-data" href="${socialMedia.value}" target="_blank"><img src="./images/${socialMediaType.value}-icon.png" class="icon extra-data">${socialMedia.value}</a>`
         socialMedia.value = ""
         socialMediaType.value = "internet"
         return listItem
     }
 
     printButton.addEventListener("click", () => {
-        alert("Impressão com cores de fundo ainda não está disponível, tenha paciência e em breve será disponibilizado")
+        alert(`Atenção!
+        Na aba de imprimir/salvar como PDF selecionar:
+        • Tamanho do papel: A4
+        • Escala(%): 130%
+        • Margens: Nenhum
+        • Ativar elementos gráficos de plano de fundo`)
         window.print()
     })
 
