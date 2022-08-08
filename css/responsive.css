@@ -1,0 +1,153 @@
+/* Media de impressão */
+
+@media print {
+    main{
+        display: none !important;
+    }
+    .curriculum{
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+    }
+}
+
+/* Medias responsivas */
+
+@media screen and (max-width: 1425px){
+    .presentation-example{
+        margin-left: 20px;
+    }
+    .curriculum{
+        left: 720px;
+        align-self: center;
+    }
+
+}
+
+@media screen and (max-width: 1350px){
+    body{
+        display: flex;
+        flex-direction: column;
+
+    } 
+    .curriculum{
+        position: relative;
+        left: auto;
+    }
+    main {
+        display: flex !important;
+        width: 100%;
+        align-items: center;
+        transition: 1s;
+    }
+    main header {
+        width: 95%;
+    }
+    main section{
+        width: 700px;
+    }
+}
+
+@media screen and (max-width:1250px){
+    .presentation-container{
+        flex-direction: column;
+    }
+    .presentation, .presentation-info{
+        width: 100%;
+    }
+    .presentation-example{
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 710px){
+    article.colors{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 634px){
+    :root{
+        font-size: 14px;
+    }
+    .presentation-info{
+        flex-direction: column;
+        align-items: center;
+        margin: 40px auto;
+    }
+    .presentation-example img{
+        width: 400px;
+    }
+    button{
+        width: 200px;
+        margin-top: 10px;
+    }
+    input.global, .selection{
+        width: 180px;
+    }
+    input.double{
+        width: 390px;
+    }
+    main section{
+        width: 100%;
+    }
+    main header{
+        width: 100%;
+    }
+    span.fake-input{
+        background-size: 250px;
+    }
+    .curriculum{
+        transform: scale(0.75);
+        top: -95px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .presentation-example img{
+        width: 380px;
+    }
+    input.global, .selection{
+        width: 150px;
+        font-size: 0.8rem;
+    }
+    input.double{
+        width: 330px;
+    }
+    span.fake-input{
+        background-size: 220px;
+    }
+    .curriculum{
+        transform: scale(0.58);
+        top: -170px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .presentation-example img{
+        width: 340px;
+    }
+    button{
+        width: 180px;
+    }
+    :root{
+        font-size: 12px;
+    }
+    input.global, .selection{
+        width: 120px;
+    }
+    .selection{
+        font-size: 0.71rem;
+    }
+    input.double{
+        width: 270px;
+    }
+    span.fake-input{
+        background-size: 200px;
+    }
+    .curriculum{
+        transform: scale(0.5);
+        top: -210px;
+    }
+}

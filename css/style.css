@@ -12,6 +12,7 @@ body{
     background-color: #ccc;
     font-family: 'Anek Latin', sans-serif;
     text-align: center;
+    min-width: 360px;
 }
 
 .orange{
@@ -31,7 +32,7 @@ body{
 .presentation{
     background-color: #fff;
     width: 700px;   
-    height:100vh;
+    min-height:100vh;
     margin: 0;
     box-shadow: 1px 1px 1px 1px #0000002d;
     display: flex;
@@ -64,7 +65,7 @@ body{
 .presentation-info{
     margin: 20px;
     width: 650px;
-    margin: 80px 25px;
+    margin: 80px auto;
     display: flex;
     justify-content: space-around;
 }
@@ -78,7 +79,8 @@ figure figcaption{
 }
 
 .presentation-example{
-    margin: 70px;
+    margin: 70px 150px;
+    transition: 1s;
 }
 
 .presentation-example *:hover{
@@ -273,6 +275,8 @@ input.global, .selection{
     border: 0.7px solid #7171AC;
     color: #666;
     outline: none;
+    font-size: 1rem;
+    word-break: break-word;
     border-radius: 3px;
     padding: 10px;
 }
@@ -297,6 +301,7 @@ input.high{
 
 article.colors{
     display: flex;
+    font-size: 1.2rem;
     justify-content: space-around;
     width: 100%;
 }
@@ -337,6 +342,7 @@ span.fake-input:hover{
     position: fixed;
     top: 20px;
     left: 800px;
+    transition: 1s;
     width: 620px;
     height: 877px;
     font-size: 14px;

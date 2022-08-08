@@ -32,7 +32,6 @@ export function concludeSection(){
 
     pageColor.addEventListener("change", () => {
         curriculumBody.style.backgroundColor = `${pageColor.value}`
-        console.log(pageColor.value)
     })
 
     beltColor.addEventListener("change", () => {
@@ -75,11 +74,7 @@ export function concludeSection(){
 
     printButton.addEventListener("click", () => {
         alert("Impressão com cores de fundo ainda não está disponível, tenha paciência e em breve será disponibilizado")
-        main.style.display = "none"    
-        curriculum.style.left = "0"
-        curriculum.style.top = "0"
         window.print()
-        location.reload()
     })
 
 }
