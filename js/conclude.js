@@ -49,7 +49,7 @@ export function concludeSection(){
         const fileReader = new FileReader()
         fileReader.readAsDataURL(pictureFile.files[0])
         fileReader.onloadend = (event) => {
-            getPicture.src = event.target.result
+            getPicture.style.backgroundImage = `url('${event.target.result}')`
         }
     })
 
@@ -72,11 +72,11 @@ export function concludeSection(){
 
     printButton.addEventListener("click", () => {
         alert(`Atenção!
-        Na aba de imprimir/salvar como PDF selecionar:
-        • Tamanho do papel: A4
-        • Escala(%): 130%
-        • Margens: Nenhum
-        • Ativar elementos gráficos de plano de fundo`)
+            Na aba de imprimir/salvar como PDF selecionar:
+            • Tamanho do papel: A4
+            • Escala(%): 130%
+            • Margens: Nenhum
+            • Ativar elementos gráficos de plano de fundo`)
         window.print()
     })
 

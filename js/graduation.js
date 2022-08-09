@@ -26,10 +26,12 @@ export function graduationSection(){
     function addLI(){
         const listItem = document.createElement('li')
         listItem.setAttribute('class', 'container')
+        let optDuration = ""
+        !duration.value ? false : optDuration = `Duração: ${duration.value}`
         listItem.innerHTML = `
         <div class="grad-name">
             <h4 class="extra-data"><span class="extra-data icon"></span>${instituition.value}</h4>
-            <h6>Duração: ${duration.value}</h6>
+            <h6>${optDuration}</h6>
         </div>
         <div class="grad-description">
             <h5 class="extra-data">${cert.value}</h5>

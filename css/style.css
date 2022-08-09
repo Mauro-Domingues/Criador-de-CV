@@ -390,6 +390,10 @@ ul{
     width: 80%;
     height: 80%;
     border-radius: 50%;
+    background: url('https://th.bing.com/th/id/R.06a4b188974c00e016631ae58a21eea9?rik=DPgzscCQ6M7WGw&riu=http%3a%2f%2fwww.vhv.rs%2ffile%2fmax%2f19%2f199715_circle-png.png&ehk=FW0Mefel6P1jD5mUidAgo8SFudWPfJH4K1MuloiVzww%3d&risl=&pid=ImgRaw&r=0');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .about{
