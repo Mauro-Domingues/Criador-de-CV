@@ -396,6 +396,12 @@ ul{
     background-size: cover;
 }
 
+#picture-scale{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .about{
     height: 50%;
     padding-top: 20px;

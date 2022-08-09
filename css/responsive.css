@@ -21,14 +21,12 @@
         left: 720px;
         align-self: center;
     }
-
 }
 
 @media screen and (max-width: 1350px){
     body{
         display: flex;
         flex-direction: column;
-
     } 
     .curriculum{
         position: relative;

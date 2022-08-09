@@ -33,7 +33,7 @@ export function contactSection(){
         const ddd = phone.value.slice(2, 4)
         const preN = phone.value.slice(4, 9)
         const sufN = phone.value.slice(-4)
-        cPhoneNumber.innerHTML = `<a class="extra-data" href="https://web.whatsapp.com/send?phone=${phone.value}" target="_blank"><img src="./images/phone-icon.png" class="icon extra-data"></img>+${cArea} (${ddd}) ${preN} - ${sufN}</a>`
+        cPhoneNumber.innerHTML = `<a class="extra-data" href="https://wa.me/${phone.value}" target="_blank"><img src="./images/phone-icon.png" class="icon extra-data"></img>+${cArea} (${ddd}) ${preN} - ${sufN}</a>`
         cContactEmail.innerHTML = `<a class="extra-data" href="mailto:${email.value}" target="_blank"><img src="./images/email-icon.png" class="icon extra-data"></img>${email.value}</a>`
         cID.innerHTML = `<img src="./images/map-landmarker-icon.png" class="icon extra-data"></img>${adress.value}, ${city.value} - ${cep.value}`
         setTimeout(() => {

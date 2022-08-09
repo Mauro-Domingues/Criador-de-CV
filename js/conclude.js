@@ -12,6 +12,8 @@ export function concludeSection(){
     const socialMediaType = document.querySelector("#social-media-type")
     const addButton = document.querySelector(".conclude-add")
     const removeButton = document.querySelector(".conclude-remove")
+    const onButton = document.querySelector(".conclude-on")
+    const outButton = document.querySelector(".conclude-out")
     const printButton = document.querySelector(".pdf")
 
     // Const do currículo
@@ -21,6 +23,7 @@ export function concludeSection(){
     const belt = document.querySelector(".belt")
     const getPicture = document.querySelector(".get-picture")
     const socialMedias = document.querySelector(".social-medias")
+    let getPictureSize = 140
 
     // Funções
 
@@ -45,12 +48,26 @@ export function concludeSection(){
     })
 
     pictureFile.addEventListener("change", () => {
-        alert(`Importante! Escolha uma foto 3x4 ou retirada "com o celular em pé"`)
+        alert("Importante! Escolha uma foto no qual seu rosto esteja centralizado")
         const fileReader = new FileReader()
         fileReader.readAsDataURL(pictureFile.files[0])
         fileReader.onloadend = (event) => {
             getPicture.style.backgroundImage = `url('${event.target.result}')`
         }
+    })
+
+    function pictureScale(){
+        getPicture.style.backgroundSize = `${getPictureSize}px`
+    }
+
+    onButton.addEventListener("change", () => {
+        getPictureSize = getPictureSize + 5
+        pictureScale()
+    })
+
+    outButton.addEventListener("change", () => {
+        getPictureSize = getPictureSize - 5
+        pictureScale()
     })
 
     addButton.addEventListener("change", () => {
