@@ -40,12 +40,12 @@ export function concludeSection(){
     })
 
     fontInButton.addEventListener("change", () => {
-        getFontSize = getFontSize + 0.1
+        getFontSize = getFontSize + 0.5
         fontScale()
     })
 
     fontOutButton.addEventListener("change", () => {
-        getFontSize = getFontSize - 0.1
+        getFontSize = getFontSize - 0.5
         fontScale()
     })
 
