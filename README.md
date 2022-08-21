@@ -10,9 +10,9 @@ A expectativa inicial era refatorar o código mantendo ao máximo a identidade v
 
 O resultado de otimização final foi de:<br>
 • 423 linhas de HTML para 293<br>
-• 948 linhas de CSS para 555<br>
+• 949 linhas de CSS para 555<br>
 • 383 linhas de JS para 344<br>
-#Totalizando 1192 linhas de 1754 (67,95% do tamanho inicial já com os features incluídos)<br>
+#Totalizando 1193 linhas de 1754 (68,01% do tamanho inicial já com os features incluídos)<br>
 
 Visualizar projeto final: https://mauro-domingues.github.io/Criador-de-CV/
 
