@@ -14,6 +14,8 @@ export function concludeSection(){
     const removeButton = document.querySelector(".conclude-remove")
     const onButton = document.querySelector(".conclude-on")
     const outButton = document.querySelector(".conclude-out")
+    const fontInButton = document.querySelector(".font-in")
+    const fontOutButton = document.querySelector(".font-dec")
     const printButton = document.querySelector(".pdf")
 
     // Const do currículo
@@ -23,12 +25,28 @@ export function concludeSection(){
     const belt = document.querySelector(".belt")
     const getPicture = document.querySelector(".get-picture")
     const socialMedias = document.querySelector(".social-medias")
+    let getFontSize = 14
     let getPictureSize = 140
 
     // Funções
 
+    function fontScale(){
+        curriculum.style.fontSize = `${getFontSize}px`
+        socialMedias.style.fontSize = `${getFontSize - 4}px`
+    }
+
     fontFamily.addEventListener("change", () => {
         curriculum.style.fontFamily = `"${fontFamily.value}"`
+    })
+
+    fontInButton.addEventListener("change", () => {
+        getFontSize = getFontSize + 0.1
+        fontScale()
+    })
+
+    fontOutButton.addEventListener("change", () => {
+        getFontSize = getFontSize - 0.1
+        fontScale()
     })
 
     pageColor.addEventListener("change", () => {
@@ -88,12 +106,18 @@ export function concludeSection(){
     }
 
     printButton.addEventListener("click", () => {
-        alert(`Atenção!
-            Na aba de imprimir/salvar como PDF selecionar:
+        alert(`                                         ATENÇÃO!
+
+            É recomendado que você salve o PDF pelo computador
+            devido as limitações nas opções de impressão
+            dos dispositivos móveis.
+
+            Na aba de imprimir/salvar como PDF selecione:
             • Tamanho do papel: A4
             • Escala(%): 130%
-            • Margens: Nenhum
-            • Ativar elementos gráficos de plano de fundo`)
+            • Ativar elementos gráficos de plano de fundo
+            
+            Boa sorte na sua próxima vaga 🙂💲`)
         window.print()
     })
 
