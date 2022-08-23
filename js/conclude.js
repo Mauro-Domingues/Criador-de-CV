@@ -1,5 +1,9 @@
 export function concludeSection(){
 
+    // Const do documento
+
+    const curriculumFrameworks = document.getElementsByTagName("link");
+
     // Const da seção
 
     const fontFamily = document.querySelector("#font-family")
@@ -10,11 +14,13 @@ export function concludeSection(){
     const pictureFile = document.querySelector("#picture-file")
     const socialMedia = document.querySelector("#social-media")
     const socialMediaType = document.querySelector("#social-media-type")
+    const frameworkSelector = document.querySelector("#frameworks")
     const addButton = document.querySelector(".conclude-add")
     const removeButton = document.querySelector(".conclude-remove")
     const onButton = document.querySelector(".conclude-on")
     const outButton = document.querySelector(".conclude-out")
     const fontInButton = document.querySelector(".font-in")
+    const apply = document.querySelector(".apply")
     const fontOutButton = document.querySelector(".font-dec")
     const printButton = document.querySelector(".pdf")
 
@@ -104,6 +110,10 @@ export function concludeSection(){
         socialMediaType.value = "internet"
         return listItem
     }
+
+    apply.addEventListener("click", () => {
+        curriculumFrameworks[3].href = `${frameworkSelector.value}`
+    })
 
     printButton.addEventListener("click", () => {
         alert(`                                         ATENÇÃO!

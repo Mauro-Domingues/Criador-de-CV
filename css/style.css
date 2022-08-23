@@ -137,6 +137,15 @@ button:active{
     box-shadow: 0 0 3px #F37112;
 }
 
+
+.apply{
+    margin-top: 0;
+    padding-right: 0;
+    height: 55px;
+    text-align: center;
+    background-image: none;
+}
+
 .pdf {
     text-align: center;
     background-color: #198b19;
@@ -175,7 +184,7 @@ main .main-header{
     width: 10px;
     height: 10px;
     border-radius: 50px;
-    margin: 10px;
+    margin: 10px 10px 5px 10px;
 }
 
 .verified-text{
@@ -339,6 +348,12 @@ span.fake-input:hover{
     border: 1px solid #1688FE;
 }
 
+#picture-scale{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 /* Seção do CV */
 
 .curriculum{
@@ -356,7 +371,6 @@ span.fake-input:hover{
 .social-medias{
     font-size: 10px;
 }
-
 ul{
     width: 100%;
 }
@@ -371,39 +385,18 @@ ul{
 
 /* Faixa do CV */
 
-.belt{
-    width: 30%;
-    height: 100%;
-    background-color: #434445;
-    color: #fff;
-}
-
 .belt * {
     width: 90%;
 }
 
-.picture{
-    height: 20%;
-}
-
 .get-picture{
-    width: 80%;
-    height: 80%;
     border-radius: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#picture-scale{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
 .about{
-    height: 50%;
-    padding-top: 20px;
     justify-content: flex-start;
 }
 
@@ -412,7 +405,6 @@ ul{
 }
 
 .social-medias{
-    height: 30%;
     padding-bottom: 10px;
     justify-content: flex-end;
 }
@@ -420,8 +412,6 @@ ul{
 /* Corpo do CV */
 
 .body{
-    width: 70%;
-    height: 100%;
     background-color: #fff;
     color: #000;
 }
@@ -461,42 +451,19 @@ hr{
 
 /* Dados */
 
-.main-info{
-    height: 20%;
-    flex-direction: row;
-}
-
 .name{
-    width: 40%;
-    height: 100%;
     align-items: flex-start;
     justify-content: flex-start;
     text-align: left;
 }
 
-.name .first-name, .name .surname, .name .c-title, .name .age{
-    margin-left: 10px;
-}
-
-.c-title {
-    margin-top: 5px;
-}
-
-.name .first-name, .name .age{
-    margin-top: 15px;
-}
-
 .adress{
-    width: 60%;
-    height: 100%;
     justify-content: flex-end;
-    margin-bottom: -15px;
 }
 
 /* Experiência */
 
 .xp-info{
-    height: 30%;
     justify-content: flex-start;
 }
 
@@ -514,13 +481,11 @@ hr{
 /* Formação */
 
 .grad-info{
-    height: 30%;
     justify-content: flex-start;
 }
 
 /* Conhecimentos */
 
 .skill-info{
-    height: 20%;
     justify-content: flex-start;
 }

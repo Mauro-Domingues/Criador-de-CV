@@ -1,0 +1,86 @@
+/* Faixa do CV */
+
+.belt{
+    width: 30%;
+    height: 100%;
+    background-color: #434445;
+    color: #fff;
+}
+
+.picture{
+    height: 20%;
+} 
+
+.get-picture{
+    width: 80%;
+    height: 80%;
+}
+
+.about{
+    height: 50%;
+    padding-top: 20px;
+}
+
+.about h4{
+    margin-bottom: 15px;
+}
+
+.social-medias{
+    height: 30%;
+}
+
+/* Corpo do CV */
+
+.body{
+    width: 70%;
+    height: 100%;
+}
+
+.body > *{
+    flex-direction: column;
+    width: 99%;
+}
+
+/* Dados */
+
+.main-info{
+    height: 20%;
+    flex-direction: row;
+}
+
+.name{
+    width: 40%;
+    height: 100%;
+}
+
+.name .first-name, .name .surname, .name .c-title, .name .age{
+    margin-left: 10px;
+}
+
+.name .first-name, .name .age{
+    margin-top: 15px;
+}
+
+.adress{
+    width: 60%;
+    height: 100%;
+    margin-bottom: -15px;
+}
+
+/* Experiência */
+
+.xp-info{
+    height: 30%;
+}
+
+/* Formação */
+
+.grad-info{
+    height: 30%;
+}
+
+/* Conhecimentos */
+
+.skill-info{
+    height: 20%;
+}
