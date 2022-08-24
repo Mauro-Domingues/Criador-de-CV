@@ -443,6 +443,9 @@ ul{
     width: 20px;
     margin-right: 5px;
     align-self: flex-start;
+    background-color: #000;
+    border: 0.5px solid #fff;
+    border-radius: 50%;
 }
 
 hr{
@@ -459,6 +462,11 @@ hr{
 
 .adress{
     justify-content: flex-end;
+}
+
+.adress .icon{
+    background-color: #fff;
+    border: none;
 }
 
 /* Experiência */
